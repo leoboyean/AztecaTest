@@ -1,79 +1,83 @@
 // YApi QuickType插件生成，具体参考文档:https://plugins.jetbrains.com/plugin/18847-yapi-quicktype/documentation
 
-package com.test.aztecaevaluation.data.sourses.remote
+package com.test.aztecaevaluation.data.models
 
-data class ShowsResponse (
-    val score: Double,
-    val show: Show
-)
+import com.google.gson.annotations.SerializedName
+import com.test.aztecaevaluation.domain.models.ShowDto
 
-data class Show (
-    val summary: String,
-    val image: Image,
-    val averageRuntime: Long,
-    val links: Links,
-    val premiered: String,
-    val rating: Rating,
-    val runtime: Long,
-    val weight: Long,
-    val language: String,
-    val type: String,
-    val url: String,
-    val officialSite: String,
-    val network: Network,
-    val schedule: Schedule,
-    val genres: List<String>,
-    val name: String,
-    val ended: String,
-    val id: Long,
-    val externals: Externals,
-    val updated: Long,
-    val status: String
-)
+//data class ShowsResponse (
+//    @SerializedName("score")
+//    val score: Double = 0.0,
+//    @SerializedName("show")
+//    val show: Show?
+//)
 
-data class Externals (
-    val thetvdb: Long,
-    val imdb: String,
-    val tvrage: Long
-)
-
-data class Image (
-    val original: String,
-    val medium: String
-)
-
-data class Links (
-    val self: Self,
-    val previousepisode: Previousepisode
-)
-
-data class Previousepisode (
-    val name: String,
-    val href: String
-)
-
-data class Self (
-    val href: String
-)
-
-data class Network (
-    val country: Country,
-    val name: String,
-    val id: Long,
-    val officialSite: String
-)
-
-data class Country (
-    val code: String,
-    val timezone: String,
-    val name: String
-)
-
-data class Rating (
-    val average: Double
-)
-
-data class Schedule (
-    val days: List<String>,
-    val time: String
-)
+//data class Show (
+//    @SerializedName("summary")
+//    val summary: String = "",
+//    @SerializedName("image")
+//    val image: Image,
+//    @SerializedName("averageRuntime")
+//    val averageRuntime: Long = 0L,
+//    @SerializedName("links")
+//    val links: Links,
+//    @SerializedName("premiered")
+//    val premiered: String = "",
+//    @SerializedName("rating")
+//    val rating: Rating,
+//    @SerializedName("runtime")
+//    val runtime: Long = 0L,
+//    @SerializedName("weight")
+//    val weight: Long = 0L,
+//    @SerializedName("language")
+//    val language: String = "",
+//    @SerializedName("type")
+//    val type: String = "",
+//    @SerializedName("url")
+//    val url: String = "",
+//    @SerializedName("officialSite")
+//    val officialSite: String = "",
+//    @SerializedName("network")
+//    val network: Network,
+//    @SerializedName("schedule")
+//    val schedule: Schedule,
+//    @SerializedName("genres")
+//    val genres: List<String>,
+//    @SerializedName("name")
+//    val name: String = "",
+//    @SerializedName("ended")
+//    val ended: String = "",
+//    @SerializedName("id")
+//    val id: Long = 0L,
+//    @SerializedName("externals")
+//    val externals: Externals,
+//    @SerializedName("updated")
+//    val updated: Long = 0L,
+//    @SerializedName("status")
+//    val status: String = ""
+//)
+//
+//fun Show.toDto(): ShowDto = ShowDto(
+//    summary = summary,
+//    image = image,
+//    averageRuntime = averageRuntime,
+//    links = links,
+//    premiered = premiered,
+//    rating = rating,
+//    runtime = runtime,
+//    weight = weight,
+//    language = language,
+//    type = type,
+//    url = url,
+//    officialSite = officialSite,
+//    network = network,
+//    schedule = schedule,
+//    genres = genres,
+//    name = name,
+//    ended = ended,
+//    id = id,
+//    externals = externals,
+//    updated = updated,
+//    status = status
+//)
+//

@@ -26,6 +26,10 @@ android {
                 "proguard-rules.pro"
             )
         }
+
+        debug {
+            isMinifyEnabled = false
+        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -66,6 +70,10 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 
+//    implementation("com.github.bumptech.glide:glide:4.7.1")
+    implementation("com.github.bumptech.glide:glide:4.7.1")
+    // Use the specific Compose integration library
+    implementation("com.github.bumptech.glide:compose:1.0.0-beta01")
     implementation(libs.androidx.room)
-    implementation(libs.androidx.room.ktx)
+//    implementation(libs.androidx.room.ktx)
 }

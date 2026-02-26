@@ -1,4 +1,10 @@
 package com.test.aztecaevaluation.domain.usecases
 
-class ShowByIdUseCase {
+import com.test.aztecaevaluation.domain.repository.ShowsRepository
+
+class ShowByIdUseCase(
+    private val showsRepository: ShowsRepository
+) {
+    suspend fun invoke(idShow: Long) =
+        showsRepository.getShowById(idShow)
 }
