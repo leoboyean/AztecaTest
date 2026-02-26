@@ -15,8 +15,6 @@ class ShowsDataRepo(
 
     override suspend fun getShows(): List<Show> {
         val shows = showsService.getShows(1)
-        Log.i("TAG", "getShows: ----------- $shows")
-        Log.i(TAG, "getShows: finished ALL OK*-************************")
         return shows.map {
             it.toDto()
         }

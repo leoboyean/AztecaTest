@@ -50,10 +50,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             AztecaEvaluationTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-//                    Greeting(
-//                        name = "Android",
-//                        modifier = Modifier.padding(innerPadding)
-//                    )
                     ShowList(
                         viewModel.data.value,
                         modifier = Modifier.padding(innerPadding),
@@ -148,28 +144,6 @@ fun ShowList(shows: List<Show>, modifier: Modifier = Modifier, onClick: () -> Un
 
                     }
                 }
-
-//                Column {
-//                    GlideImage(
-//                        model = item.image?.medium,
-//                        contentDescription = item.summary,
-//                        contentScale = ContentScale.Crop,
-//                        modifier = Modifier.fillMaxSize()
-//                    )
-//                }
-//                Column(modifier = Modifier.padding(12.dp)) {
-//                    Text(
-//                        text = "${item.name}",
-//                        color = Color.Black,
-//                        style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold)
-//                    )
-//                    HorizontalDivider(modifier = Modifier.padding(6.dp))
-//                    Text(
-//                        text = "${item.type}",
-//                        color = Color.Black
-//                        //
-//                    )
-//                }
             }
         }
     }
